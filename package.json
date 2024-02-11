@@ -1,10 +1,14 @@
 {
     "name": "@irimold/react-hooks",
-    "version": "0.0.0-Dan001",
+    "version": "0.0.0-Dan002",
     "description": "Irimold React Hooks",
     "type": "module",
     "main": "index.umd.js",
     "module": "index.es.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Irimold/react-hooks.git"
+    },
     "scripts": {
         "build": "tsc && vite build",
         "lint": "eslint src --max-warnings=0"
