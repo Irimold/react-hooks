@@ -1,10 +1,10 @@
 {
     "name": "@irimold/react-hooks",
-    "version": "0.0.0-Dan002",
+    "version": "0.0.0-Dan003",
     "description": "Irimold React Hooks",
     "type": "module",
-    "main": "index.umd.js",
-    "module": "index.es.js",
+    "main": "dist/index.umd.js",
+    "module": "dist/index.es.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/Irimold/react-hooks.git"
