@@ -1,0 +1,45 @@
+{
+    "name": "@irimold/react-hooks",
+    "version": "0.0.0-Dan001",
+    "description": "Irimold React Hooks",
+    "type": "module",
+    "main": "index.umd.js",
+    "module": "index.es.js",
+    "scripts": {
+        "build": "tsc && vite build",
+        "lint": "eslint src --max-warnings=0"
+    },
+    "keywords": [
+        "React Hooks"
+    ],
+    "author": {
+        "name": "Irimold",
+        "email": "hello@irimold.web.id",
+        "url": "https://irimold.web.id"
+    },
+    "license": "MIT",
+    "peerDependencies": {
+        "@types/react": "^18.2.46",
+        "react": "^18.2.0"
+    },
+    "peerDependenciesMeta": {
+        "@types/react": {
+            "optional": true
+        }
+    },
+    "sideEffects": false,
+    "types": "dist/index.d.ts",
+    "files": [ "dist" ],
+    "devDependencies": {
+        "@types/react": "^18.2.55",
+        "@typescript-eslint/eslint-plugin": "^6.21.0",
+        "@vitejs/plugin-react": "^4.2.1",
+        "eslint-plugin-react": "^7.33.2",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "typescript": "^5.3.3",
+        "vite": "^5.1.1",
+        "vite-plugin-dts": "^3.7.2"
+    }
+}
