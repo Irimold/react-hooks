@@ -1,6 +1,6 @@
 {
     "name": "@irimold/react-hooks",
-    "version": "0.0.0-Dan004",
+    "version": "0.0.0-Dan005",
     "description": "Irimold React Hooks",
     "type": "module",
     "main": "dist/index.umd.js",
@@ -12,7 +12,7 @@
     "scripts": {
         "build": "tsc && vite build",
         "lint": "eslint src --max-warnings=0",
-        "push": "git tag %npm_package_version% && git push --follow-tags",
+        "push": "git tag %npm_package_version% && git push && git push origin %npm_package_version%",
         "push-patch": "npm version patch && git push --follow-tags",
         "push-minor": "npm version minor && git push --follow-tags",
         "push-major": "npm version major && git push --follow-tags"
