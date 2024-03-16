@@ -22,6 +22,13 @@ export default defineConfig({
                 '@types/react',
                 'react'
             ],
+            onwarn(warning, defaultHandler) {
+                if (warning.code === 'SOURCEMAP_ERROR') {
+                    return
+                }
+          
+                defaultHandler(warning)
+            },
         },
     },
     resolve: {
