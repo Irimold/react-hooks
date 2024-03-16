@@ -1,3 +1,5 @@
+"use client"
+
 import { useEffect, useState } from "react"
 
 export const useMediaQuery = (query = "(min-width:1024px)") => {
@@ -16,6 +18,7 @@ export const useMediaQuery = (query = "(min-width:1024px)") => {
 
         const mediaQuery = window.matchMedia(query)
         mediaQuery.addEventListener('change', updateMatch)
+        setMatch(mediaQuery.matches)
 
         return () => mediaQuery.removeEventListener('change', updateMatch)
 

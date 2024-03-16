@@ -1,3 +1,5 @@
+"use client"
+
 import { useCallback, useEffect, useState } from "react"
 import { useFullscreenType } from "./type"
 
@@ -9,7 +11,7 @@ export const useFullscreen : useFullscreenType = (navigationUI) => {
 
         const notFullscreen = !document.fullscreenElement
         if (notFullscreen) {
-            document.body.requestFullscreen({ navigationUI: navigationUI || 'hide' })
+            document.documentElement.requestFullscreen({ navigationUI: navigationUI || 'hide' })
         } else {
             document.exitFullscreen()
         }
