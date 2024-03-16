@@ -1,2 +1,2 @@
-export * from "./useFullscreen"
-export * from "./useMediaQuery"
+export { useFullscreen } from "./useFullscreen"
+export { useMediaQuery } from "./useMediaQuery"
