@@ -1,1 +1,0 @@
-export { useSpeechSynthesis } from "./useSpeechSynthesis";
