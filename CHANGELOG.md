@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/Irimold/react-hooks/compare/v0.1.1...v0.1.2) (2024-04-20)
+
+
+### Bug Fixes
+
+* **Workflows:** action doesn't compile ([0fcd249](https://github.com/Irimold/react-hooks/commit/0fcd249a8e5330c1c80f0a6cd958d5185a28586e))
+
 ## [0.1.1](https://github.com/Irimold/react-hooks/compare/v0.1.0...v0.1.1) (2024-04-20)
 
 
