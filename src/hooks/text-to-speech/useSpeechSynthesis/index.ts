@@ -87,6 +87,11 @@ export const useSpeechSynthesis : useSpeechSynthesisType = ({
     useEffect(() => {
         
         synth.current = speechSynthesis
+
+        synth.current.addEventListener('voiceschanged', event => {
+            getVoices()
+        })
+
         getVoices()
 
     }, [])
