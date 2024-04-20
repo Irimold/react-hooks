@@ -1,6 +1,6 @@
 {
     "name": "@irimold/react-hooks",
-    "version": "0.0.0-Dan005",
+    "version": "0.1.0",
     "description": "Irimold React Hooks",
     "type": "module",
     "main": "dist/index.umd.js",
@@ -11,37 +11,7 @@
     },
     "scripts": {
         "build": "tsc && vite build",
-        "lint": "eslint src --max-warnings=0",
-        "push": "git tag %npm_package_version% && git push && git push origin %npm_package_version%",
-        "push-patch": "npm version patch && git push --follow-tags",
-        "push-minor": "npm version minor && git push --follow-tags",
-        "push-major": "npm version major && git push --follow-tags"
-    },
-    "release": {
-        "branches": [
-            "main",
-            {
-                "name": "ine",
-                "prerelease": true
-            },
-            {
-                "name": "dan",
-                "prerelease": true
-            }
-        ],
-        "repositoryUrl": "https://github.com/Irimold/react-hooks.git",
-        "plugins": [
-            "@semantic-release/commit-analyzer",
-            "@semantic-release/release-notes-generator",
-            "@semantic-release/npm",
-            "@semantic-release/github",
-            [
-                "@semantic-release/git",
-                {
-                    "message": "Release: ${nextRelease.version} \n\n${nextRelease.notes}"
-                }
-            ]
-        ]
+        "lint": "eslint src --max-warnings=0"
     },
     "keywords": [
         "React Hooks"
@@ -67,20 +37,15 @@
         "dist"
     ],
     "devDependencies": {
-        "@semantic-release/commit-analyzer": "^12.0.0",
-        "@semantic-release/git": "^10.0.1",
-        "@semantic-release/github": "^10.0.2",
-        "@semantic-release/npm": "^12.0.0",
-        "@semantic-release/release-notes-generator": "^12.1.0",
-        "@types/react": "^18.2.55",
-        "@typescript-eslint/eslint-plugin": "^6.21.0",
+        "@types/react": "^18.2.79",
+        "@typescript-eslint/eslint-plugin": "^7.7.0",
         "@vitejs/plugin-react": "^4.2.1",
-        "eslint-plugin-react": "^7.33.2",
+        "eslint-plugin-react": "^7.34.1",
         "eslint-plugin-react-hooks": "^4.6.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "typescript": "^5.3.3",
+        "typescript": "^5.4.5",
         "vite": "^5.1.1",
-        "vite-plugin-dts": "^3.7.2"
+        "vite-plugin-dts": "^3.8.3"
     }
 }
