@@ -1,3 +1,7 @@
+export {
+    useTextareaAutoResize
+} from "@/hooks/layout"
+
 export { 
     useFullscreen, 
     useMediaQuery
