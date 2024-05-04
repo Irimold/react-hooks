@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.0](https://github.com/Irimold/react-hooks/compare/v0.1.2...v0.2.0) (2024-05-04)
+
+
+### Features
+
+* **Layout:** Add textarea autolayout ([bc00fb2](https://github.com/Irimold/react-hooks/commit/bc00fb2a7fba5f9fe07959e550daf1b8a93d4721))
+
+
+### Bug Fixes
+
+* **Media Query:** type definition not used ([90a809a](https://github.com/Irimold/react-hooks/commit/90a809a6371411f510f882cd4b167160a4991818))
+
 ## [0.1.2](https://github.com/Irimold/react-hooks/compare/v0.1.1...v0.1.2) (2024-04-20)
 
 
