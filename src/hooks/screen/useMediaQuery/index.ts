@@ -1,8 +1,9 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { useMediaQueryType } from "./type"
 
-export const useMediaQuery = (query = "(min-width:1024px)") => {
+export const useMediaQuery : useMediaQueryType = (query = "(min-width:1024px)") => {
 
     const [match, setMatch] = useState(false)
 
