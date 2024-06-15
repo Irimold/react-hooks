@@ -7,7 +7,7 @@
     "module": "dist/index.es.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Irimold/react-hooks.git"
+        "url": "git+https://github.com/Irimold/react-hooks.git"
     },
     "scripts": {
         "build": "tsc && vite build",
