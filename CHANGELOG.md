@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3](https://github.com/Irimold/react-hooks/compare/v0.2.2...v0.2.3) (2024-10-23)
+
+
+### Bug Fixes
+
+* Incorrect entry ([47ed02a](https://github.com/Irimold/react-hooks/commit/47ed02a1e116b29085177f197ebab84ca15d259f))
+
 ## [0.2.2](https://github.com/Irimold/react-hooks/compare/v0.2.1...v0.2.2) (2024-10-23)
 
 
