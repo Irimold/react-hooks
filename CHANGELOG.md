@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/Irimold/react-hooks/compare/v0.2.1...v0.2.2) (2024-10-23)
+
+
+### Bug Fixes
+
+* Prevent use client directive getting erased ([e893bee](https://github.com/Irimold/react-hooks/commit/e893beeb8a6192c78d0a61f13e1d9d9ccb6f9a44))
+
 ## [0.2.1](https://github.com/Irimold/react-hooks/compare/v0.2.0...v0.2.1) (2024-10-23)
 
 
