@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/Irimold/react-hooks/compare/v0.2.0...v0.2.1) (2024-10-23)
+
+
+### Bug Fixes
+
+* **Dependency:** Update dependencies ([c8be9a4](https://github.com/Irimold/react-hooks/commit/c8be9a431fec3f48ee3b5d720745814599116d15))
+
 ## [0.2.0](https://github.com/Irimold/react-hooks/compare/v0.1.2...v0.2.0) (2024-05-04)
 
 
