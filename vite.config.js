@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import dts from 'vite-plugin-dts'
 import path from 'path'
+import preserveDirectives from 'rollup-plugin-preserve-directives'
 
 export default defineConfig({
     plugins: [
@@ -9,26 +10,23 @@ export default defineConfig({
         dts({
             insertTypesEntry: true
         }),
+        preserveDirectives(),
     ],
     build: {
         lib: {
-            entry : './src/index.ts',
-            name : 'IriReactComponent',
-            formats: ['es', 'umd'],
-            fileName: format => `index.${format}.js`,
+            entry   : './src/index.ts',
+            name    : 'IriReactComponent',
+            formats : ['es'],
+            fileName: (format, name) => `${name}.js`,
         },
         rollupOptions: {
             external: [
                 '@types/react',
                 'react'
             ],
-            onwarn(warning, defaultHandler) {
-                if (warning.code === 'SOURCEMAP_ERROR') {
-                    return
-                }
-          
-                defaultHandler(warning)
-            },
+            output: {
+                preserveModules: true
+            }
         },
     },
     resolve: {
