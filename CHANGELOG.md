@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.4](https://github.com/Irimold/react-hooks/compare/v0.2.3...v0.2.4) (2024-10-26)
+
+
+### Bug Fixes
+
+* **SpeechSynth:** Synth not speaking ([d7ca99b](https://github.com/Irimold/react-hooks/commit/d7ca99b31a24e2c3dc513c4a1e349c4f351ee353))
+
 ## [0.2.3](https://github.com/Irimold/react-hooks/compare/v0.2.2...v0.2.3) (2024-10-23)
 
 
