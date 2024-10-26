@@ -32,6 +32,10 @@ export const useSpeechSynthesis : useSpeechSynthesisType = ({
                 throw new Error('No voice available')
             }
 
+            if (!synth.current) {
+                return
+            }
+
             const utterance = new SpeechSynthesisUtterance(text)
             utterance.pitch     = options.pitch
             utterance.rate      = options.rate
@@ -43,6 +47,8 @@ export const useSpeechSynthesis : useSpeechSynthesisType = ({
             if (typeof onEnd == 'function') {
                 utterance.addEventListener('end', onEnd)
             }
+
+            synth.current.speak(utterance)
             
         } catch (error) {
             console.error(error)
