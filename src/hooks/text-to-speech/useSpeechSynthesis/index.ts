@@ -10,7 +10,7 @@ export const useSpeechSynthesis : useSpeechSynthesisType = ({
 }) => {
 
     const voices    = useRef<SpeechSynthesisVoice[]>([])
-    const synth     = useRef<SpeechSynthesis>()
+    const synth     = useRef<SpeechSynthesis>(null)
 
     const speak = useCallback<speakFunction>(({
         text,
@@ -22,7 +22,6 @@ export const useSpeechSynthesis : useSpeechSynthesisType = ({
         onEnd,
         onError,
     }) => {
-
         try {
             if (!text) {
                 throw new Error('Invalid text')
@@ -57,11 +56,9 @@ export const useSpeechSynthesis : useSpeechSynthesisType = ({
                 onError(error)
             }
         }
-
     }, [])
 
     const getVoices = useCallback(() => {
-
         if (!lang) {
             console.error('Lang is undefined')
             return
@@ -79,27 +76,22 @@ export const useSpeechSynthesis : useSpeechSynthesisType = ({
         if (typeof onVoiceGet == 'function') {
             onVoiceGet(filteredVoice)
         }
-
     }, [])
 
     const handleSpeakError = useCallback((event : SpeechSynthesisErrorEvent) => {
-
         throw new Error(SpeechSynthesisErrorMsg[event.error])
-
     }, [])
 
 
 
     useEffect(() => {
-        
         synth.current = speechSynthesis
 
-        synth.current.addEventListener('voiceschanged', event => {
+        synth.current.addEventListener('voiceschanged', () => {
             getVoices()
         })
 
         getVoices()
-
     }, [])
 
 
