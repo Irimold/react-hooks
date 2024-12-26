@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.0](https://github.com/Irimold/react-hooks/compare/v0.2.4...v0.3.0) (2024-12-26)
+
+
+### Features
+
+* Update EsLint ([37939c0](https://github.com/Irimold/react-hooks/commit/37939c096c7e1baf81ab815dfef0105f7b5f8d62))
+* Update react to 19 and vite to 6 ([e6965b3](https://github.com/Irimold/react-hooks/commit/e6965b39796c6381a2d1714724005dd8f82005a3))
+
 ## [0.2.4](https://github.com/Irimold/react-hooks/compare/v0.2.3...v0.2.4) (2024-10-26)
 
 
